@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Translate</title>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+    <body>
+        <div class="heading">
+            <h1>Google Translate</h1>
+        </div>
+
+        <div class="mainContent"> 
+            <aside>   
+                <label for="sourceLang">
+                    <select id ="sourceLang" placeholder="Select the Language">
+                        <option value="" disabled selected>---Select source language---</option>
+                        <option value ="Tamil">Tamil</option>
+                        <option value ="English">English</option>
+                        <option value ="Spanish">Spanish</option>
+                        <option value ="Japenese">Japenese</option>
+                        <option value ="Kanada">Kanada</option>
+                        <option value ="Telugu">Telugu</option>
+                        <option value ="Malayalam">Malayalam</option>
+                        <option value ="Hindi">Hindi</option>
+                        <option value ="Urudu">Urudu</option>
+                        <option value ="Arabic">Arabic</option>
+                    </select>
+                </label>
+                <textarea id="srcText" cols=50 rows=10 placeholder="Enter the Text" name="srcText"></textarea> 
+            </aside>
+            <aside>
+                <label for="destLang">
+                    <select id ="destLang">
+                        <option value="" disabled selected>---Select source language---</option>
+                        <option value ="Tamil">Tamil</option>
+                        <option value ="English">English</option>
+                        <option value ="Spanish">Spanish</option>
+                        <option value ="Japenese">Japenese</option>
+                        <option value ="Kanada">Kanada</option>
+                        <option value ="Telugu">Telugu</option>
+                        <option value ="Malayalam">Malayalam</option>
+                        <option value ="Hindi">Hindi</option>
+                        <option value ="Urudu">Urudu</option>
+                        <option value ="Arabic">Arabic</option>
+                    </select>
+                </label>
+                <textarea id="destText" cols=50 rows=10 placeholder="Translation" name="destText"></textarea> 
+            </aside>
+        </div>
+        <div class="btn">
+            <button type="submit" id="translate">Translate</button>
+        </div>
+        <script src="translate.js" ></script>
+    </body>
+</html>
